@@ -51,27 +51,6 @@ Built with <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap 5</b>, this portfolio highl
 
 ## 🌐 Live Demo
 🔗 **[View Portfolio](https://fazeensaleem17-byte.github.io/fazeen-portfolio/)**
-
----
-
-## 📂 Project Structure
-```text
-fazeen-portfolio/
-│
-├─ **index.html**             # Main HTML file
-├─ **hi.jpg**                  # Profile picture
-├─ **1.webp**                  # Project 1 image
-├─ **2.jpg**                   # Project 2 image
-├─ **3.jpg**                   # Project 3 image
-├─ **page1.png**               # Screenshot: Home
-├─ **page2.png**               # Screenshot: Projects
-├─ **page3.png**               # Screenshot: Skills
-├─ **page4.png**               # Screenshot: About
-├─ **page5.png**               # Screenshot: Contact Us
-├─ **Fazeen_Resume CV.pdf**    # Resume file
-└─ **README.md**               # Project documentation
-```
-
 ---
 
 ## ⚡ Getting Started
