@@ -40,7 +40,7 @@ Built with <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap 5</b>, this portfolio highl
 
 ---
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3, Bootstrap 5  
 - **Icons:** Bootstrap Icons  
 - **Hosting:** GitHub Pages  
@@ -48,7 +48,7 @@ Built with <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap 5</b>, this portfolio highl
 ---
 
 ## 🌐 Live Demo
-🔗 **[View Portfolio](https://fazeensaleem17-byte.github.io/fazeen-portfolio/)**
+### 🔗 **[View Portfolio](https://fazeensaleem17-byte.github.io/fazeen-portfolio/)**
 ---
 
 ## ⚡ Getting Started
