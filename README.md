@@ -38,8 +38,6 @@ Built with <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap 5</b>, this portfolio highl
 ### 📩 Contact Us  
 ![Contact](page5.png)  
 
-*(Screenshots are stored directly in this repository)*
-
 ---
 
 ## 🛠️ Tech Stack
@@ -69,14 +67,6 @@ Simply open **`index.html`** in your browser.
 
 ---
 
-### 🚀 Deploy on GitHub Pages
-1. Go to **Settings → Pages** in your GitHub repo.  
-2. Under **Branch**, select **`main`** and **`/root`**.  
-3. Click **Save** → Your site will be live at:  
-   👉 **[https://fazeensaleem17-byte.github.io/fazeen-portfolio/](https://fazeensaleem17-byte.github.io/fazeen-portfolio/)**
-
----
-
 ### 👨‍💻 Author
 **Fazeen Saleem**  
 🎓 *AI Graduate* | 💻 *Web & AI Developer*  
@@ -88,10 +78,3 @@ Simply open **`index.html`** in your browser.
 ---
 
 ⭐ If you like this project, please give it a **star** on GitHub!
-
----
-
-### 🔑 Highlights
-✅ **Professional Icon** at the top (from Icons8) – represents a *Portfolio Website*  
-✅ **Five Screenshots** (*Home*, *Projects*, *Skills*, *About*, *Contact Us*) clearly separated  
-✅ **All links** (Live Demo, Email, LinkedIn, GitHub) ready to use
