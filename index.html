@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fazeen.ai</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background:#f8f9fa;
+    }
+    .card {
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      transform: translateY(0);
+    }
+    .card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+    }
+    .profile-img {
+      border: 6px solid #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    .fade-in-delay-1 { animation-delay: 0.2s; }
+    .fade-in-delay-2 { animation-delay: 0.4s; }
+    .fade-in-delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .btn-dark:hover {
+      background-color: #0d6efd;
+      color: #fff;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .progress-bar {
+      transition: width 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background:linear-gradient(90deg,#0a0a0a,#1f1f1f);">
+    <div class="container px-4">
+      <a class="navbar-brand fw-bold fs-4 text-uppercase" href="#">fazeen.ai</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-4">
+          <li class="nav-item"><a class="nav-link active fw-semibold text-light" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#contact">Contact Us</a></li>
+        </ul>
+        <form class="d-flex ms-lg-3" role="search">
+          <input class="form-control me-2 rounded-pill border-0 bg-light text-dark px-3" type="search" placeholder="Search">
+          <button class="btn btn-outline-light rounded-pill px-4 fw-semibold" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="py-5 d-flex justify-content-center align-items-center" style="background:linear-gradient(90deg,#f8f9fa,#e9ecef);height:550px;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 text-center text-md-start fade-in fade-in-delay-1">
+          <h1 class="fw-bold mb-3">Hi, I’m <span class="text-primary">Fazeen Saleem</span></h1>
+          <h4 class="mb-3 text-secondary">AI & Web Developer</h4>
+          <p class="lead">I build intelligent applications and responsive websites to solve real-world problems.</p>
+          <a href="#projects" class="btn btn-dark btn-lg mt-3">View My Work</a>
+        </div>
+        <div class="col-md-5 text-center mt-4 mt-md-0 fade-in fade-in-delay-2">
+          <img src="hi.jpg" class="img-fluid rounded-circle shadow profile-img" style="max-width:300px;" alt="Fazeen Saleem">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold fade-in">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in fade-in-delay-1">
+          <div class="card shadow h-100">
+            <img src="1.webp" class="card-img-top" style="height:220px;object-fit:cover;" alt="Smart Security System">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Smart Security System</h5>
+              <p class="card-text">Emergency shake activation triggers alerts & shares <strong>live location</strong>. Built with Flutter & Firebase.</p>
+              <a href="https://github.com/fazeensaleem17-byte/smart_security_app" class="btn btn-dark w-100">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-2">
+          <div class="card shadow h-100">
+            <img src="2.jpg" class="card-img-top" style="height:220px;object-fit:cover;" alt="NLP Chatbot">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">NLP Chatbot</h5>
+              <p class="card-text">Conversational chatbot for HR support using <strong>NLP</strong>.</p>
+              <a href="#" class="btn btn-dark w-100">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-3">
+          <div class="card shadow h-100">
+            <img src="3.jpg" class="card-img-top" style="height:220px;object-fit:cover;" alt="Portfolio Website">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Portfolio Website</h5>
+              <p class="card-text">Fully responsive portfolio using HTML, CSS & Bootstrap.</p>
+              <a href="#" class="btn btn-dark w-100">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5" style="background:#f8f9fa;">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold fade-in">Skills & Proficiency</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in fade-in-delay-1">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-code-slash fs-1 text-primary"></i>
+              <h5 class="fw-bold mt-3">Python</h5>
+              <p class="text-muted">Data Analysis, ML, Automation</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-primary" style="width:70%"></div>
+              </div>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-2">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-window fs-1 text-success"></i>
+              <h5 class="fw-bold mt-3">Web Development</h5>
+              <p class="text-muted">HTML, CSS, JavaScript, Bootstrap, Tailwind</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-success" style="width:80%"></div>
+              </div>
+              <small class="text-muted">Advanced</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-3">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-braces fs-1 text-warning"></i>
+              <h5 class="fw-bold mt-3">Django</h5>
+              <p class="text-muted">Backend APIs, CRUD Apps</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-warning" style="width:80%"></div>
+              </div>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-1">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-graph-up fs-1 text-danger"></i>
+              <h5 class="fw-bold mt-3">Data Analysis</h5>
+              <p class="text-muted">Pandas, NumPy, Visualization</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-danger" style="width:65%"></div>
+              </div>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-2">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-chat-dots fs-1 text-info"></i>
+              <h5 class="fw-bold mt-3">NLP</h5>
+              <p class="text-muted">Chatbots & Text Processing</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-info" style="width:60%"></div>
+              </div>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-3">
+          <div class="card shadow h-100 text-center border-0">
+            <div class="card-body">
+              <i class="bi bi-phone fs-1 text-secondary"></i>
+              <h5 class="fw-bold mt-3">Flutter</h5>
+              <p class="text-muted">Cross-platform Mobile Apps</p>
+              <div class="progress" style="height:8px;">
+                <div class="progress-bar bg-secondary" style="width:80%"></div>
+              </div>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5" style="background:linear-gradient(135deg,#f8f9fa,#e9ecef);">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5 fade-in">About Me</h2>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5 fade-in fade-in-delay-1">
+          <div class="card shadow-lg border-0 rounded-4 flex-fill">
+            <img src="hi.jpg" class="card-img-top rounded-top-4 profile-img" alt="Fazeen Saleem" style="height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="col-lg-7 fade-in fade-in-delay-2">
+          <div class="p-4 bg-white rounded-4 shadow-sm flex-fill d-flex flex-column justify-content-center">
+            <p class="lead mb-3">I am <strong>Fazeen Saleem</strong>, an <strong>AI Graduate</strong> from <strong>National Textile University, Faisalabad</strong>. My expertise includes <strong>Machine Learning</strong>, <strong>Data Analysis</strong>, and <strong>Full-Stack Development</strong>. I create intelligent, responsive web and mobile applications that solve real-world problems.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-mortarboard-fill text-primary fs-4 me-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1">Education</h6>B.S. Artificial Intelligence – NTU Faisalabad
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-lightbulb-fill text-warning fs-4 me-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1">Specialties</h6>AI, Data Science, Full-Stack Web Development
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-code-slash text-success fs-4 me-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1">Tech Stack</h6>Python, Django, Flutter, Data Analytics
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-people-fill text-danger fs-4 me-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1">Soft Skills</h6>Teamwork, Problem Solving, Communication
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="Fazeen_Resume CV.pdf" class="btn btn-dark mt-4 px-4 rounded-pill align-self-start"><i class="bi bi-download me-2"></i>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5 fade-in">Contact Me</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in fade-in-delay-1">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <i class="bi bi-envelope-fill text-primary fs-1 mb-3"></i>
+            <h5 class="fw-bold">Email</h5>
+            <p class="text-muted mb-2">fazeensaleem17@gmail.com</p>
+            <a href="mailto:fazeensaleem17@gmail.com" class="btn btn-outline-primary rounded-pill px-4">Send Email</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-2">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <i class="bi bi-telephone-fill text-success fs-1 mb-3"></i>
+            <h5 class="fw-bold">Phone</h5>
+            <p class="text-muted mb-2">+92 306-5875003</p>
+            <a href="tel:+923065875003" class="btn btn-outline-success rounded-pill px-4">Call Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in fade-in-delay-3">
+          <div class="card h-100 border-0 shadow-sm text-center p-4">
+            <i class="bi bi-geo-alt-fill text-danger fs-1 mb-3"></i>
+            <h5 class="fw-bold">Location</h5>
+            <p class="text-muted mb-2">Jaranwala, Pakistan</p>
+            <a href="https://www.google.com/maps/place/Jaranwala" target="_blank" class="btn btn-outline-danger rounded-pill px-4">View Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">fazeen.ai</h5>
+          <p class="small text-light opacity-75">AI Graduate & Web Developer building intelligent applications and responsive websites.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#home" class="text-decoration-none text-light opacity-75 hover-opacity">Home</a></li>
+            <li class="mb-2"><a href="#projects" class="text-decoration-none text-light opacity-75 hover-opacity">Projects</a></li>
+            <li class="mb-2"><a href="#skills" class="text-decoration-none text-light opacity-75 hover-opacity">Skills</a></li>
+            <li class="mb-2"><a href="#about" class="text-decoration-none text-light opacity-75 hover-opacity">About</a></li>
+            <li class="mb-2"><a href="#contact" class="text-decoration-none text-light opacity-75 hover-opacity">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Connect</h5>
+          <div class="d-flex align-items-center">
+            <a href="https://www.linkedin.com/in/fazeen-saleem-53b00922b/" class="text-light fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/fazeensaleem17-byte" class="text-light fs-4 me-3"><i class="bi bi-github"></i></a>
+            <a href="mailto:fazeensaleem17@gmail.com" class="text-light fs-4"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="text-center small text-light opacity-75 mb-0">© 2025 <strong>Fazeen Saleem</strong> – All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
