@@ -1,6 +1,6 @@
 <!-- Project Icon -->
 <p align="center">
-  <img src="https://img.icons8.com/external-flat-juicy-fish/344/external-portfolio-web-design-flat-flat-juicy-fish.png" alt="Portfolio Icon" width="120">
+  <img src="https://img.icons8.com/color/96/portfolio.png" alt="Portfolio Icon" width="120">
 </p>
 
 <h1 align="center">🚀 Fazeen Portfolio Website</h1>
@@ -40,7 +40,7 @@ Built with <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap 5</b>, this portfolio highl
 
 ---
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3, Bootstrap 5  
 - **Icons:** Bootstrap Icons  
 - **Hosting:** GitHub Pages  
